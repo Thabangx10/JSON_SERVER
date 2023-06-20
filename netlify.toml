@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"
+publish = "build"
+
+[build.environment]
+# Set the environment variable for JSON Server
+JSON_SERVER = "json-server db.json --port $PORT --host 0.0.0.0"
+
+[build.lifecycle]
+# Set the install command to install json-server
+install = "npm install -g json-server"
