@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Server</title>
+</head>
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .text-center {
+        text-align: center;
+      }
+      
+      .text-4xl {
+        font-size: 2.25rem;
+      }
+      
+      .text-indigo-400 {
+        color: #6366f1;
+      }
+      
+      .py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      
+      .min-w-full {
+        min-width: 100%;
+      }
+      
+      .divide-y {
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+      
+      .divide-gray-200 > tr > td,
+      .divide-gray-200 > tr > th {
+        border-top-width: 1px;
+        border-top-color: rgba(229, 231, 235, var(--tw-border-opacity));
+      }
+      
+      .bg-gray-50 {
+        background-color: #f9fafb;
+      }
+      
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+      
+      .text-left {
+        text-align: left;
+      }
+      
+      .text-xs {
+        font-size: 0.75rem;
+      }
+      
+      .font-medium {
+        font-weight: 500;
+      }
+      
+      .text-gray-500 {
+        color: #718096;
+      }
+      
+      .uppercase {
+        text-transform: uppercase;
+      }
+      
+      .tracking-wider {
+        letter-spacing: 0.05em;
+      }
+      
+      .bg-white {
+        background-color: #ffffff;
+      }      
+</style>
+
+<body>
+    <!-- <h1>HELLO WORLD!</h1> -->
+    <section>
+        <div class="container mx-auto">
+            <h1 class="text-center text-4xl text-indigo-400 py-12">JSON Server</h1>
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Employee</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./server.js"></script>
+</body>
+</html>
